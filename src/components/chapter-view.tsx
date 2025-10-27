@@ -5,8 +5,7 @@ import { book, type BookPart } from '@/lib/book';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
-import { EmotionExplorer } from './ai/emotion-explorer';
-import { Card, CardContent } from './ui/card';
+import { Card } from './ui/card';
 
 function WelcomeView() {
   const coverImage = PlaceHolderImages.find((img) => img.id === 'cover-img');
@@ -79,7 +78,6 @@ function PartView({ part }: { part: BookPart }) {
         <Separator className="my-12" />
 
         <footer className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <EmotionExplorer text={part.content} />
         </footer>
       </div>
     </div>
