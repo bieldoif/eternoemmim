@@ -5,7 +5,6 @@ import { book, type BookPart } from '@/lib/book';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
-import { SentimentAnalyzer } from './ai/sentiment-analyzer';
 import { EmotionExplorer } from './ai/emotion-explorer';
 import { Card, CardContent } from './ui/card';
 
@@ -80,7 +79,6 @@ function PartView({ part }: { part: BookPart }) {
         <Separator className="my-12" />
 
         <footer className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <SentimentAnalyzer text={part.content} />
           <EmotionExplorer text={part.content} />
         </footer>
       </div>
