@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "prologue-img",
-      "description": "A person writing in a diary by a window.",
-      "imageUrl": "https://images.unsplash.com/photo-1578129806209-1da8520da8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzb2xpdHVkZSUyMGRpYXJ5fGVufDB8fHx8MTc2MTU3MTA2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "solitude diary"
+      "description": "A romantic watercolor-style illustration of a couple.",
+      "imageUrl": "https://i.postimg.cc/4yqRRg0g/a-romantic-watercolor-style-illustration-z-LKun-CBl-Qk63d-ZORl-I1q-Vw-j-b-M2f-C-Rpm-Lu9tv-HOJzt-A.jpg",
+      "imageHint": "romantic couple"
     },
     {
       "id": "ch1-img",
@@ -75,8 +75,8 @@
     {
       "id": "ch12-img",
       "description": "A person looking at a distant, unreachable shore.",
-      "imageUrl": "https://images.unsplash.com/photo-1518406479616-cd3f1cde0a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxicm9rZW4lMjBwcm9taXNlfGVufDB8fHx8MTc2MTU3MTA2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "broken promise"
+      "imageUrl": "https://images.unsplash.com/photo-1518406479616-cd3f1cde0a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyYWlueSUyMHdpbmRvd3xlbnwwfHx8fDE3NjE1NTc1NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rainy window"
     },
     {
       "id": "ch13-img",
@@ -104,9 +104,9 @@
     },
     {
       "id": "cover-img",
-      "description": "Golden sunset with warm tones of orange and pink.",
-      "imageUrl": "https://i.postimg.cc/JzD401VY/Pedro-Gabriel-Cenario-Um-por-do-sol-dourado-com-tons-quentes-laranja-rosa-e-f2c17793-3f77-4f77-9.jpg",
-      "imageHint": "golden sunset"
+      "description": "A romantic watercolor-style illustration of a couple.",
+      "imageUrl": "https://i.postimg.cc/4yqRRg0g/a-romantic-watercolor-style-illustration-z-LKun-CBl-Qk63d-ZORl-I1q-Vw-j-b-M2f-C-Rpm-Lu9tv-HOJzt-A.jpg",
+      "imageHint": "romantic couple"
     }
   ]
 }
