@@ -1,3 +1,4 @@
+
 export type BookPart = {
   id: string;
   type: 'prologue' | 'chapter' | 'epilogue';
@@ -253,7 +254,10 @@ Adeus, meu amor. Mas nunca um adeus final. Você está em cada lembrança, em ca
 Helena não se foi completamente. Ela está em cada gesto meu, em cada lembrança que me faz sorrir, em cada amanhecer que me inspira a continuar. O amor que compartilhamos não morreu; ele se transformou em força, em guia, em luz silenciosa que ilumina minha caminhada.
 Agora caminho com coragem, carregando você dentro de mim. A dor da perda ainda existe, mas ela se mistura com gratidão, amor e memórias que me transformaram. Cada passo que dou é um passo guiado por você, por nós, e pela certeza de que amar verdadeiramente é eterno, mesmo quando o coração sente falta.
 Este é o fim do diário, mas não do amor. Ele persiste, silencioso, imortal, presente em cada batida do meu coração, lembrando-me todos os dias de que vivi algo único, verdadeiro e inesquecível.
-O amor verdadeiro não se vai com a ausência; ele permanece em cada memória, em cada suspiro, em cada lembrança que carrego em mim.`,
+
+“O amor verdadeiro não se vai com a ausência; ele permanece em cada memória, em cada suspiro, em cada lembrança que carrego em mim.”`,
     },
   ],
 };
+
+    
