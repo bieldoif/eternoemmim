@@ -1,3 +1,112 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "prologue-img",
+      "description": "A person writing in a diary by a window.",
+      "imageUrl": "https://images.unsplash.com/photo-1578129806209-1da8520da8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzb2xpdHVkZSUyMGRpYXJ5fGVufDB8fHx8MTc2MTU3MTA2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "solitude diary"
+    },
+    {
+      "id": "ch1-img",
+      "description": "A soft-focus image of a couple's first meeting in a cafe.",
+      "imageUrl": "https://images.unsplash.com/photo-1576149324567-4fd5627ee73d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaXJzdCUyMG1lZXRpbmclMjBjb3VwbGV8ZW58MHx8fHwxNzYxNTcxMDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "first meeting couple"
+    },
+    {
+      "id": "ch2-img",
+      "description": "A close-up of two hands gently touching.",
+      "imageUrl": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aG9sZGluZyUyMGhhbmRzfGVufDB8fHx8MTc2MTQ3NjEyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "holding hands"
+    },
+    {
+      "id": "ch3-img",
+      "description": "A cozy morning scene with two cups of coffee on a table.",
+      "imageUrl": "https://images.unsplash.com/photo-1614174485351-42f21678b998?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb3JuaW5nJTIwY29mZmVlfGVufDB8fHx8MTc2MTU2OTc2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "morning coffee"
+    },
+    {
+      "id": "ch4-img",
+      "description": "A couple laughing together in a park.",
+      "imageUrl": "https://images.unsplash.com/photo-1598133775469-50f06d14a0c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYXVnaGluZyUyMGNvdXBsZXxlbnwwfHx8fDE3NjE1NzEwNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laughing couple"
+    },
+    {
+      "id": "ch5-img",
+      "description": "Raindrops on a window with a couple visible inside.",
+      "imageUrl": "https://images.unsplash.com/photo-1509635022432-0220ac12960b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyYWlueSUyMHdpbmRvd3xlbnwwfHx8fDE3NjE1NTc1NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rainy window"
+    },
+    {
+      "id": "ch6-img",
+      "description": "An empty, sunlit room with a melancholic feel.",
+      "imageUrl": "https://images.unsplash.com/photo-1630699144339-420f59b4747b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbXB0eSUyMHJvb218ZW58MHx8fHwxNzYxNTA2NjM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "empty room"
+    },
+    {
+      "id": "ch7-img",
+      "description": "Old objects like a book and a teacup on a dusty table.",
+      "imageUrl": "https://images.unsplash.com/photo-1677438076842-6708ac2cad8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvbGQlMjBvYmplY3RzfGVufDB8fHx8MTc2MTU3MTA2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old objects"
+    },
+    {
+      "id": "ch8-img",
+      "description": "A long, empty hospital corridor.",
+      "imageUrl": "https://images.unsplash.com/photo-1628372095387-017d1099fc19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxob3NwaXRhbCUyMGNvcnJpZG9yfGVufDB8fHx8MTc2MTU1MDQyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hospital corridor"
+    },
+    {
+      "id": "ch9-img",
+      "description": "A vintage clock with its hands stopped.",
+      "imageUrl": "https://images.unsplash.com/photo-1681459876999-4f6cd1164e4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdG9wcGVkJTIwY2xvY2t8ZW58MHx8fHwxNzYxNTcxMDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stopped clock"
+    },
+    {
+      "id": "ch10-img",
+      "description": "A stack of old letters tied with a ribbon.",
+      "imageUrl": "https://images.unsplash.com/photo-1570610222761-b08cb1d09a0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsb3ZlJTIwbGV0dGVyc3xlbnwwfHx8fDE3NjE1NzEwNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "love letters"
+    },
+    {
+      "id": "ch11-img",
+      "description": "A single candle flame burning in the dark.",
+      "imageUrl": "https://images.unsplash.com/photo-1631428402217-746a9292ee84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmbGFtZSUyMGRhcmt8ZW58MHx8fHwxNzYxNTcxMDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flame dark"
+    },
+    {
+      "id": "ch12-img",
+      "description": "A person looking at a distant, unreachable shore.",
+      "imageUrl": "https://images.unsplash.com/photo-1518406479616-cd3f1cde0a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxicm9rZW4lMjBwcm9taXNlfGVufDB8fHx8MTc2MTU3MTA2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "broken promise"
+    },
+    {
+      "id": "ch13-img",
+      "description": "An empty chair next to a window.",
+      "imageUrl": "https://images.unsplash.com/photo-1571055931484-22dce9d6c510?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlbXB0eSUyMGNoYWlyfGVufDB8fHx8MTc2MTQ4NDY2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "empty chair"
+    },
+    {
+      "id": "ch14-img",
+      "description": "A lighthouse beam cutting through the fog.",
+      "imageUrl": "https://images.unsplash.com/photo-1596095763180-1ba53ee7518e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsaWdodGhvdXNlJTIwZ3VpZGV8ZW58MHx8fHwxNzYxNTcxMDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lighthouse guide"
+    },
+    {
+      "id": "ch15-img",
+      "description": "A person watching a sunrise, symbolizing hope.",
+      "imageUrl": "https://images.unsplash.com/photo-1586695724166-d3576546880a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwaG9wZXxlbnwwfHx8fDE3NjE1Mzk3OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sunrise hope"
+    },
+    {
+      "id": "epilogue-img",
+      "description": "A person walking alone on a path into the distance.",
+      "imageUrl": "https://images.unsplash.com/photo-1582093236149-516a8be696fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3YWxraW5nJTIwYWxvbmV8ZW58MHx8fHwxNzYxNTcxMDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "walking alone"
+    },
+    {
+      "id": "cover-img",
+      "description": "An open book with a feather on it.",
+      "imageUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcGVuJTIwYm9va3xlbnwwfHx8fDE3NjE1MTcyMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "open book"
+    }
+  ]
 }
