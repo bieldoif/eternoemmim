@@ -50,16 +50,16 @@ function PartView({ part }: { part: BookPart }) {
   return (
     <div className="animate-fade-in">
       {image && (
-        <div className="relative h-64 md:h-80 w-full overflow-hidden">
+        <div className="relative h-auto w-full max-w-4xl mx-auto my-8">
           <Image
             src={image.imageUrl}
             alt={image.description}
-            fill
-            className="object-cover"
+            width={1200}
+            height={800}
+            className="w-full h-auto object-contain"
             data-ai-hint={image.imageHint}
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
         </div>
       )}
       <div className="p-4 sm:p-6 md:p-8 lg:p-12 max-w-4xl mx-auto">
