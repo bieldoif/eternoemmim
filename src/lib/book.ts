@@ -262,7 +262,7 @@ Este é o fim do diário, mas não do amor. Ele persiste, silencioso, imortal, p
       type: 'chapter',
       title: 'Agradecimentos',
       imageId: 'agradecimentos-img',
-      content: 'Agradeço a todos que me apoiaram nesta jornada. Sua presença foi fundamental para que eu pudesse transformar a dor em palavras e a saudade em uma homenagem ao amor que nunca morre. Aos meus amigos, família e, especialmente, a você, meu eterno amor, que continua a me guiar, mesmo de longe. Este livro é nosso.',
+      content: 'A todos que chegaram até aqui, meu mais sincero obrigado. Cada página deste livro carrega sentimentos, memórias e pedaços de mim — e saber que minhas palavras encontraram abrigo em seus olhos é o maior presente que eu poderia receber. Que esta história tenha tocado seu coração de alguma forma, assim como me transformou ao escrevê-la.  Um agradecimento especial à Raica, minha amiga e artista incrível, que deu rosto e alma a este livro através de sua sensibilidade na capa. Sua arte não apenas ilustrou a história — ela a sentiu, a traduziu e a fez viver em cores.  De coração, Obrigado por fazer parte dessa jornada.',
     },
   ],
 };
