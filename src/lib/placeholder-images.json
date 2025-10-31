@@ -107,6 +107,12 @@
       "description": "A romantic watercolor-style illustration of a couple.",
       "imageUrl": "https://i.postimg.cc/4yqRRg0g/a-romantic-watercolor-style-illustration-z-LKun-CBl-Qk63d-ZORl-I1q-Vw-j-b-M2f-C-Rpm-Lu9tv-HOJzt-A.jpg",
       "imageHint": "romantic couple"
+    },
+    {
+      "id": "agradecimentos-img",
+      "description": "A handwritten thank you note on a piece of parchment.",
+      "imageUrl": "https://images.unsplash.com/photo-1557395120-d48fc38063d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0aGFuayUyMHlvdXxlbnwwfHx8fDE3NjE4OTQ3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "thank you"
     }
   ]
 }

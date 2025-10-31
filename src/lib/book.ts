@@ -257,6 +257,13 @@ Este é o fim do diário, mas não do amor. Ele persiste, silencioso, imortal, p
 
 “O amor verdadeiro não se vai com a ausência; ele permanece em cada memória, em cada suspiro, em cada lembrança que carrego em mim.”`,
     },
+    {
+      id: 'agradecimentos',
+      type: 'chapter',
+      title: 'Agradecimentos',
+      imageId: 'agradecimentos-img',
+      content: 'Agradeço a todos que me apoiaram nesta jornada. Sua presença foi fundamental para que eu pudesse transformar a dor em palavras e a saudade em uma homenagem ao amor que nunca morre. Aos meus amigos, família e, especialmente, a você, meu eterno amor, que continua a me guiar, mesmo de longe. Este livro é nosso.',
+    },
   ],
 };
 
