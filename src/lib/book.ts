@@ -44,7 +44,7 @@ Prepare-se para entrar em um mundo onde a saudade é companheira, o amor é eter
       imageId: 'characters-img',
       content: `**Joaquim:** Joaquim dos Santos Um homem de alma calma e olhar sereno, que carrega em cada gesto a delicadeza de quem aprendeu o verdadeiro significado do amor. Joaquim é escritor por destino e amante por vocação. Depois da partida de Helena, ele transforma a dor em palavras e as lembranças em poesia. Seu amor não se encerra na morte; ele permanece vivo, silencioso, e presente em cada batida de seu coração.
 
-**Helena:** A mulher que inspirou cada página deste livro. Embora não esteja fisicamente presente, sua essência é sentida em cada capítulo. Descrita pelos olhos de Joaquim, ela é a personificação do amor, da leveza e da alegria. Uma mulher de sorriso fácil, olhar atento e alma serena, cuja memória continua a guiar e a iluminar a vida daquele que a amou.`,
+**Helena:** Helena Helena era luz. Do tipo que não apenas iluminava o ambiente, mas também aquecia a alma de quem a amava. Possuía um riso doce, um olhar que falava antes das palavras e uma fé tranquila na beleza das pequenas coisas. Foi musa, companheira e lar para Joaquim — e mesmo depois de sua partida, continua sendo o centro do universo que ele tenta compreender através da escrita.`,
     },
     {
       id: 'chapter-1',
