@@ -42,7 +42,7 @@ Prepare-se para entrar em um mundo onde a saudade é companheira, o amor é eter
       type: 'chapter',
       title: 'Apresentação dos Personagens',
       imageId: 'characters-img',
-      content: `**Joaquim:** O narrador desta história, um homem que encontra nas palavras uma forma de eternizar o amor que sente. Sensível e profundo, ele compartilha suas memórias mais íntimas, revelando a dor da perda, mas também a força que encontra nas lembranças para seguir em frente. Através de seu diário, ele nos convida a sentir a intensidade de um amor que transcende a ausência.
+      content: `**Joaquim:** Joaquim dos Santos Um homem de alma calma e olhar sereno, que carrega em cada gesto a delicadeza de quem aprendeu o verdadeiro significado do amor. Joaquim é escritor por destino e amante por vocação. Depois da partida de Helena, ele transforma a dor em palavras e as lembranças em poesia. Seu amor não se encerra na morte; ele permanece vivo, silencioso, e presente em cada batida de seu coração.
 
 **Helena:** A mulher que inspirou cada página deste livro. Embora não esteja fisicamente presente, sua essência é sentida em cada capítulo. Descrita pelos olhos de Joaquim, ela é a personificação do amor, da leveza e da alegria. Uma mulher de sorriso fácil, olhar atento e alma serena, cuja memória continua a guiar e a iluminar a vida daquele que a amou.`,
     },
@@ -165,7 +165,7 @@ E assim, mesmo com a dor que ainda me atravessa, percebo que amar alguém de ver
       type: 'chapter',
       title: 'Capítulo 9: O tempo que parou comigo',
       imageId: 'ch9-img',
-      content: `Depois que você se foi, percebi que o tempo perdeu o sentido. As horas continuaram a passar, os dias continuaram a nascer e a morrer, mas para mim, tudo parecia congelado naquele instante em que a vida se dividiu em “antes de você” e “depois de você”.
+      content: `Depois que você se foi, percebi que o tempo perdeu o sentido. As horas continuaram a passar, os dias continuaram a nascer e a morrer, mas para mim, tudo parecia congelado naquele instante em que a life se dividiu em “antes de você” e “depois de você”.
 Eu caminhava pela casa, pelos mesmos cômodos que um dia foram cheios de risadas, e tudo parecia distante, irreconhecível. O tic-tac do relógio ecoava como um lembrete cruel: a vida segue, mesmo quando nosso coração insiste em parar. E, no entanto, eu permanecia ali, preso em memórias, revivendo cada detalhe do nosso amor, cada gesto, cada toque, como se pudesse, ao me lembrar, trazer você de volta.
 Havia momentos em que eu tentava seguir, mas o mundo lá fora parecia absurdo. As pessoas sorriam, continuavam suas rotinas, falavam sobre planos futuros, e eu apenas sentia que nada fazia sentido sem você. O tempo havia parado para mim no instante em que te perdi, e tudo que eu queria era congelar aquela memória, mantê-la intacta, porque nela você ainda estava viva, inteira, sorrindo para mim.
 Mas, ao mesmo tempo, existia uma pequena chama de resistência. Eu percebia que precisava continuar, mesmo que fosse apenas por nós dois. Era doloroso, impossível, mas havia algo dentro de mim que ainda se agarrava à vida, tentando encontrar sentido nas lembranças, tentando transformar a dor em memória, tentando transformar a ausência em amor que persiste.
@@ -275,6 +275,8 @@ Este é o fim do diário, mas não do amor. Ele persiste, silencioso, imortal, p
     },
   ],
 };
+
+    
 
     
 
