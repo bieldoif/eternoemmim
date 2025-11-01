@@ -7,6 +7,12 @@
       "imageHint": "romantic couple"
     },
     {
+      "id": "characters-img",
+      "description": "A silhouette of a couple standing apart but connected by a faint line of light, symbolizing memory.",
+      "imageUrl": "https://i.postimg.cc/9Q2W4G6g/image.png",
+      "imageHint": "couple silhouette"
+    },
+    {
       "id": "ch1-img",
       "description": "Golden sunset with warm tones of orange and pink.",
       "imageUrl": "https://i.postimg.cc/JzD401VY/Pedro-Gabriel-Cenario-Um-por-do-sol-dourado-com-tons-quentes-laranja-rosa-e-f2c17793-3f77-4f77-9.jpg",

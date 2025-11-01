@@ -38,6 +38,15 @@ Este livro é uma viagem pelo que fomos, pelo que ainda somos em memória, e pel
 Prepare-se para entrar em um mundo onde a saudade é companheira, o amor é eterno, e cada memória é um suspiro que mantém vivos aqueles que amamos, mesmo na ausência.`,
     },
     {
+      id: 'characters',
+      type: 'chapter',
+      title: 'Apresentação dos Personagens',
+      imageId: 'characters-img',
+      content: `**Joaquim:** O narrador desta história, um homem que encontra nas palavras uma forma de eternizar o amor que sente. Sensível e profundo, ele compartilha suas memórias mais íntimas, revelando a dor da perda, mas também a força que encontra nas lembranças para seguir em frente. Através de seu diário, ele nos convida a sentir a intensidade de um amor que transcende a ausência.
+
+**Helena:** A mulher que inspirou cada página deste livro. Embora não esteja fisicamente presente, sua essência é sentida em cada capítulo. Descrita pelos olhos de Joaquim, ela é a personificação do amor, da leveza e da alegria. Uma mulher de sorriso fácil, olhar atento e alma serena, cuja memória continua a guiar e a iluminar a vida daquele que a amou.`,
+    },
+    {
       id: 'chapter-1',
       type: 'chapter',
       title: 'Capítulo 1: O dia que te conheci',
@@ -169,7 +178,7 @@ E foi assim, passo a passo, lembrança a lembrança, que comecei a perceber algo
       type: 'chapter',
       title: 'Capítulo 10: As cartas que nunca te entreguei',
       imageId: 'ch10-img',
-      content: `Eu escrevia para você todos os dias, mesmo sabendo que nunca poderia entregar aquelas cartas. Não porque não quisesse, mas porque algumas palavras são tão profundas que só existem com sentido quando guardadas no silêncio do coração.
+      content: `Eu escrevia para você todos os dias, mesmo sabendo que nunca poderia entregar aquelas cartas. Não porque não quisesse, mas porque algumas words são tão profundas que só existem com sentido quando guardadas no silêncio do coração.
 Cada carta começava com um simples “eu te amo”, mas se transformava em páginas e páginas de memórias, sentimentos e desabafos que ninguém mais entenderia.
 Contava sobre minhas pequenas vitórias, sobre os momentos em que pensei em você, sobre o quanto sentia sua falta mesmo quando estava ao meu lado. Escrevia sobre nossos planos, sobre nossos risos, sobre cada toque seu que ainda parecia vivo em minhas mãos.
 Algumas cartas eram de amor puro, outras de saudade dilacerante. Havia lágrimas manchando algumas páginas, e eu as escrevia com a esperança secreta de que, de algum modo, você pudesse sentir meu coração através delas. Eu confessava medos, sonhos e segredos que nunca ousaria dizer em voz alta, mas que, no papel, se tornavam uma ponte silenciosa entre nós.
@@ -266,5 +275,7 @@ Este é o fim do diário, mas não do amor. Ele persiste, silencioso, imortal, p
     },
   ],
 };
+
+    
 
     
