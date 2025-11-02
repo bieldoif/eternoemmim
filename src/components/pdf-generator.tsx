@@ -21,6 +21,9 @@ const PdfGenerator: React.FC<PdfGeneratorProps> = ({ book, onComplete }) => {
       const content = contentRef.current;
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = pdf.internal.pageSize.getHeight();
+      
+      // A4 size in pixels at 96 DPI
+      const a4WidthInPx = 794;
 
       if (content) {
         const parts = content.querySelectorAll<HTMLDivElement>('[data-pdf-part]');
@@ -28,11 +31,11 @@ const PdfGenerator: React.FC<PdfGeneratorProps> = ({ book, onComplete }) => {
         for (let i = 0; i < parts.length; i++) {
           const partElement = parts[i];
           const canvas = await html2canvas(partElement, {
-            scale: 2,
+            scale: 2, // Higher scale for better quality
             useCORS: true,
             allowTaint: true,
-            width: partElement.offsetWidth,
-            height: partElement.offsetHeight,
+            width: a4WidthInPx, // Use fixed width for consistency
+            windowWidth: a4WidthInPx,
           });
 
           const imgData = canvas.toDataURL('image/png');
@@ -69,9 +72,9 @@ const PdfGenerator: React.FC<PdfGeneratorProps> = ({ book, onComplete }) => {
 
   return (
     <div className="fixed -z-10 -left-[9999px] -top-[9999px] opacity-0" aria-hidden="true">
-      <div ref={contentRef} style={{ fontFamily: 'Literata, serif' }}>
+      <div ref={contentRef}>
         {/* Cover Page */}
-        <div data-pdf-part="cover" className="bg-white text-black" style={{ width: '210mm', minHeight: '297mm', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '32px' }}>
+        <div data-pdf-part="cover" className="bg-white text-black" style={{ width: '210mm', minHeight: '297mm', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '32px', fontFamily: 'Literata, serif' }}>
           {coverImage && (
             <div style={{ width: '100%', maxWidth: '150mm', overflow: 'hidden', marginBottom: '32px' }}>
                <img
@@ -93,7 +96,7 @@ const PdfGenerator: React.FC<PdfGeneratorProps> = ({ book, onComplete }) => {
 
         {/* Book Parts */}
         {book.parts.map((part) => (
-           <div key={part.id} data-pdf-part={part.id} className="bg-white text-black" style={{ width: '210mm', padding: '32px', pageBreakAfter: 'always'}}>
+           <div key={part.id} data-pdf-part={part.id} className="bg-white text-black" style={{ width: '210mm', padding: '32px', pageBreakAfter: 'always', fontFamily: 'Literata, serif'}}>
             <header style={{ marginBottom: '32px', textAlign: 'center' }}>
               <h2 style={{ fontFamily: 'Literata, serif', fontSize: '24px', fontWeight: 'bold' }}>
                 {part.title}
