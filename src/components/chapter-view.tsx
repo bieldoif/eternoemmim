@@ -69,10 +69,8 @@ function PartView({ part }: { part: BookPart }) {
           </h2>
         </header>
 
-        <article className="prose prose-lg lg:prose-xl max-w-none font-body text-foreground/90 text-lg leading-relaxed space-y-6">
-          {paragraphs.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
+        <article className="prose prose-lg lg:prose-xl max-w-none font-body text-foreground/90 text-lg leading-relaxed space-y-6 whitespace-pre-wrap">
+          <p>{part.content}</p>
         </article>
 
         <Separator className="my-12" />
