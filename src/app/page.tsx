@@ -11,6 +11,8 @@ import {
   SidebarMenuButton,
   SidebarInset,
   SidebarFooter,
+  SidebarTrigger,
+  useSidebar,
 } from '@/components/ui/sidebar';
 import { book, type BookPart } from '@/lib/book';
 import ChapterView from '@/components/chapter-view';
@@ -27,9 +29,10 @@ import {
 import PdfGenerator from '@/components/pdf-generator';
 import { Button } from '@/components/ui/button';
 
-export default function Home() {
+function PageContent() {
   const [activePart, setActivePart] = useState<BookPart | null>(null);
   const [isGeneratingPdf, setIsGeneratingPdf] = useState(false);
+  const { isMobile } = useSidebar();
 
 
   const chapters = book.parts.filter((part) => part.type === 'chapter');
@@ -38,11 +41,12 @@ export default function Home() {
   );
 
   return (
-    <SidebarProvider>
+    <>
       <div className="flex min-h-screen">
-        <Sidebar className="border-r" collapsible="icon">
-          <SidebarHeader className="p-4">
+        <Sidebar className="border-r" collapsible="offcanvas">
+          <SidebarHeader className="p-4 flex items-center justify-between">
             <Logo />
+            {isMobile && <SidebarTrigger />}
           </SidebarHeader>
           <Separator />
           <SidebarContent asChild>
@@ -125,6 +129,10 @@ export default function Home() {
         </Sidebar>
         <SidebarInset>
           <main className="flex-1">
+            <header className="md:hidden p-4 border-b flex items-center justify-start gap-4">
+              <SidebarTrigger />
+              <Logo />
+            </header>
             <ChapterView activePart={activePart} />
           </main>
         </SidebarInset>
@@ -135,6 +143,15 @@ export default function Home() {
           onComplete={() => setIsGeneratingPdf(false)}
         />
       )}
-    </SidebarProvider>
+    </>
   );
+}
+
+
+export default function Home() {
+  return (
+    <SidebarProvider>
+      <PageContent />
+    </SidebarProvider>
+  )
 }
