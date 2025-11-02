@@ -17,16 +17,20 @@ import ChapterView from '@/components/chapter-view';
 import { Logo } from '@/components/logo';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
-import { Heart } from 'lucide-react';
+import { Download, Heart, Loader2 } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import PdfGenerator from '@/components/pdf-generator';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   const [activePart, setActivePart] = useState<BookPart | null>(null);
+  const [isGeneratingPdf, setIsGeneratingPdf] = useState(false);
+
 
   const chapters = book.parts.filter((part) => part.type === 'chapter');
   const otherParts = book.parts.filter(
@@ -97,6 +101,23 @@ export default function Home() {
           </SidebarContent>
           <Separator />
           <SidebarFooter className="p-4 flex-col gap-2 items-center justify-center text-center">
+             <Button
+              onClick={() => setIsGeneratingPdf(true)}
+              disabled={isGeneratingPdf}
+              className="w-full"
+            >
+              {isGeneratingPdf ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Gerando PDF...
+                </>
+              ) : (
+                <>
+                  <Download className="mr-2 h-4 w-4" />
+                  Baixar PDF
+                </>
+              )}
+            </Button>
             <p className="text-xs text-muted-foreground group-data-[collapsible=icon]:hidden">
               {book.closingMessage}
             </p>
@@ -108,6 +129,12 @@ export default function Home() {
           </main>
         </SidebarInset>
       </div>
+       {isGeneratingPdf && (
+        <PdfGenerator
+          book={book}
+          onComplete={() => setIsGeneratingPdf(false)}
+        />
+      )}
     </SidebarProvider>
   );
 }

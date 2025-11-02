@@ -42,14 +42,9 @@ function WelcomeView() {
 function PartView({ part }: { part: BookPart }) {
   const image = PlaceHolderImages.find((img) => img.id === part.imageId);
 
-  const paragraphs = part.content
-    .split(/\r?\n\s*\r?\n/)
-    .map((p) => p.trim().replace(/\r?\n/g, ' '))
-    .filter((p) => p.length > 0);
-
   return (
     <div className="animate-fade-in">
-      {image && (
+      {image && part.imageId && (
         <div className="relative h-auto w-full max-w-4xl mx-auto my-8">
           <Image
             src={image.imageUrl}
