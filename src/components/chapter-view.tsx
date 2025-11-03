@@ -6,7 +6,6 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { Card } from './ui/card';
-import { useSidebar } from './ui/sidebar';
 
 function WelcomeView() {
   const coverImage = PlaceHolderImages.find((img) => img.id === 'cover-img');
@@ -80,9 +79,8 @@ function PartView({ part }: { part: BookPart }) {
 
 
 export default function ChapterView({ activePart }: { activePart: BookPart | null }) {
-  const { isMobile } = useSidebar();
   return (
-    <ScrollArea className={isMobile ? 'h-[calc(100vh-69px)]' : 'h-screen'} bg-background>
+    <ScrollArea className={'h-[calc(100vh-81px)]'} bg-background>
       {activePart ? <PartView part={activePart} /> : <WelcomeView />}
     </ScrollArea>
   );

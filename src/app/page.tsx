@@ -2,130 +2,104 @@
 
 import { useState } from 'react';
 import {
-  SidebarProvider,
-  Sidebar,
-  SidebarHeader,
-  SidebarContent,
-  SidebarMenu,
-  SidebarMenuItem,
-  SidebarMenuButton,
-  SidebarInset,
-  SidebarFooter,
-  SidebarTrigger,
-  useSidebar,
-} from '@/components/ui/sidebar';
-import { book, type BookPart } from '@/lib/book';
-import ChapterView from '@/components/chapter-view';
-import { Logo } from '@/components/logo';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { Separator } from '@/components/ui/separator';
-import { Heart } from 'lucide-react';
-import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import ChapterView from '@/components/chapter-view';
+import { Logo } from '@/components/logo';
+import { book, type BookPart } from '@/lib/book';
+import { Button } from '@/components/ui/button';
+import { Menu } from 'lucide-react';
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTrigger,
+} from '@/components/ui/sheet';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
-function PageContent() {
+function AppMenu() {
   const [activePart, setActivePart] = useState<BookPart | null>(null);
-  const { isMobile } = useSidebar();
-
+  const [isSheetOpen, setSheetOpen] = useState(false);
 
   const chapters = book.parts.filter((part) => part.type === 'chapter');
-  const otherParts = book.parts.filter(
-    (part) => part.type !== 'chapter'
-  );
+  const otherParts = book.parts.filter((part) => part.type !== 'chapter');
+
+  const handlePartClick = (part: BookPart) => {
+    setActivePart(part);
+    setSheetOpen(false); // Fecha o menu ao selecionar um item
+  };
 
   return (
     <>
-      <div className="flex min-h-screen">
-        <Sidebar className="border-r" collapsible="offcanvas">
-          <SidebarHeader className="p-4 flex items-center justify-between">
-            <Logo />
-            {isMobile && <SidebarTrigger />}
-          </SidebarHeader>
-          <Separator />
-          <SidebarContent asChild>
-            <ScrollArea>
-              <SidebarMenu className="p-2 lg:p-4">
-                {otherParts.map((part) => (
-                  <SidebarMenuItem key={part.id}>
-                    <SidebarMenuButton
-                      onClick={() => setActivePart(part)}
-                      isActive={activePart?.id === part.id}
-                      tooltip={{
-                        children: part.title,
-                        className: 'font-body',
-                      }}
-                      className="font-headline"
-                    >
-                      <Heart className="text-primary" />
-                      <span className="truncate">{part.title}</span>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                ))}
-                
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="chapters" className="border-b-0">
-                    <AccordionTrigger className="font-headline text-sm hover:no-underline py-2 px-2 rounded-md hover:bg-sidebar-accent [&[data-state=open]>svg]:text-primary">
-                      <div className="flex items-center gap-2">
-                        <Heart className="text-primary" />
-                        <span className="truncate">Capítulos</span>
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="pt-1">
-                      <SidebarMenu className="pl-4">
-                        {chapters.map((part) => (
-                          <SidebarMenuItem key={part.id}>
-                            <SidebarMenuButton
-                              onClick={() => setActivePart(part)}
-                              isActive={activePart?.id === part.id}
-                              tooltip={{
-                                children: part.title,
-                                className: 'font-body',
-                              }}
-                              className="font-headline text-xs justify-start"
-                              variant="ghost"
-                            >
-                              <span className="truncate">{part.title}</span>
-                            </SidebarMenuButton>
-                          </SidebarMenuItem>
-                        ))}
-                      </SidebarMenu>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
+      <header className="sticky top-0 z-10 w-full border-b bg-background/95 p-4 backdrop-blur-sm">
+        <div className="flex items-center justify-between">
+          <Logo />
+          <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu />
+                <span className="sr-only">Abrir Menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <SheetHeader>
+                <Logo />
+              </SheetHeader>
+              <ScrollArea className="h-[calc(100%-80px)]">
+                <nav className="p-4">
+                  <ul>
+                    {otherParts.map((part) => (
+                      <li key={part.id}>
+                        <Button
+                          variant="ghost"
+                          className="w-full justify-start font-headline"
+                          onClick={() => handlePartClick(part)}
+                        >
+                          {part.title}
+                        </Button>
+                      </li>
+                    ))}
+                  </ul>
 
-              </SidebarMenu>
-            </ScrollArea>
-          </SidebarContent>
-          <Separator />
-          <SidebarFooter className="p-4 flex-col gap-2 items-center justify-center text-center">
-            <p className="text-xs text-muted-foreground group-data-[collapsible=icon]:hidden">
-              {book.closingMessage}
-            </p>
-          </SidebarFooter>
-        </Sidebar>
-        <SidebarInset>
-          <main className="flex-1">
-            <header className="md:hidden p-4 border-b flex items-center justify-start gap-4">
-              <SidebarTrigger />
-              <Logo />
-            </header>
-            <ChapterView activePart={activePart} />
-          </main>
-        </SidebarInset>
-      </div>
+                  <Accordion type="single" collapsible className="w-full">
+                    <AccordionItem value="chapters">
+                      <AccordionTrigger className="font-headline text-sm hover:no-underline py-2 px-2 rounded-md hover:bg-accent [&[data-state=open]>svg]:text-primary">
+                        Capítulos
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        <ul>
+                          {chapters.map((part) => (
+                            <li key={part.id}>
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                className="w-full justify-start font-headline text-xs"
+                                onClick={() => handlePartClick(part)}
+                              >
+                                {part.title}
+                              </Button>
+                            </li>
+                          ))}
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </nav>
+              </ScrollArea>
+            </SheetContent>
+          </Sheet>
+        </div>
+      </header>
+      <main>
+        <ChapterView activePart={activePart} />
+      </main>
     </>
   );
 }
 
-
 export default function Home() {
-  return (
-    <SidebarProvider>
-      <PageContent />
-    </SidebarProvider>
-  )
+  return <AppMenu />;
 }
