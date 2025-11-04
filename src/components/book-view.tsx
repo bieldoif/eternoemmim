@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import Image from 'next/image';
 import { book, type BookPart } from '@/lib/book';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -14,15 +15,16 @@ function PartView({ part }: { part: BookPart }) {
     <div className="animate-fade-in">
       {image && part.imageId && (
         <div className="relative h-auto w-full max-w-4xl mx-auto my-6 md:my-8">
-          <Image
-            src={image.imageUrl}
-            alt={image.description}
-            width={1200}
-            height={800}
-            className="w-full h-auto object-contain"
-            data-ai-hint={image.imageHint}
-            priority
-          />
+          <Card className="overflow-hidden shadow-lg">
+            <Image
+              src={image.imageUrl}
+              alt={image.description}
+              width={1200}
+              height={800}
+              className="w-full h-auto object-contain"
+              data-ai-hint={image.imageHint}
+            />
+          </Card>
         </div>
       )}
       <div className="p-6 md:p-8 lg:p-12 max-w-4xl mx-auto">
